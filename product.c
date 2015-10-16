@@ -43,7 +43,7 @@ void *producer(void *arg)
 	}
 	pthread_exit(NULL);
 }
-/*消费者进程*/
+/*消费者线程*/
 void *customer(void *arg)
 {
 	unsigned char read_buffer[UNIT_SIZE];
